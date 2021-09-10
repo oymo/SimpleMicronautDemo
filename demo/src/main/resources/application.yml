@@ -1,0 +1,23 @@
+micronaut:
+  application:
+    name: demo
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/demo
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    dialect: POSTGRES
+    password: secret
+    schema: demoschema
+flyway:
+  datasources:
+    default:
+      enabled: true
+#      clean-schema: true
+      url: jdbc:postgresql://localhost:5432/demo
+      user: postgres
+      password: secret
+      schemas: demoschema
+      default-schema: demoschema
+
+
